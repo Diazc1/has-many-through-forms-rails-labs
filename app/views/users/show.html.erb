@@ -1,1 +1,11 @@
+Users Show page
+<br>
 
+links_to
+<br>
+all of the posts a user has commented on.
+<br>
+
+<% @user.posts.each do |post| %>
+    <%= link_to post.title, post_path(post) %>
+<% end %>

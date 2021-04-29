@@ -1,0 +1,12 @@
+<h1> <%= @category.name %> Categories Show page </h1>
+<br>
+
+
+<% @category.posts.each do |post| %>
+    <%= link_to post.title, post_path(post) %>
+<% end %>
+
+
+
+Create a categories#show page that links to all of the 
+posts associated with a given category.
